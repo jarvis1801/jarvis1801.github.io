@@ -3,90 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Privacy Policy - Color Finder Auto Clicker</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
-        h1, h2, h3 { color: #333; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20.dp; color: #333; max-width: 800px; margin: 0 auto; }
+        h1, h2, h3 { color: #2c3e50; }
         ul { margin-bottom: 15px; }
-        .legal-note { border-left: 3px solid #007bff; padding-left: 10px; margin-bottom: 15px; background-color: #f7f9fc; }
+        .legal-note { border-left: 4px solid #007bff; padding: 10px 15px; margin-bottom: 20px; background-color: #f7f9fc; border-radius: 4px; }
+        .highlight { background-color: #fff3cd; padding: 2px 5px; border-radius: 3px; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <h1>Privacy Policy</h1>
-<p>Last updated: December 9, 2025</p>
+<p>Last updated: December 18, 2025</p>
 
 <p>Chris Chui ("us", "we", or "our") operates the "Color Finder Auto Clicker" mobile application (the "Service").</p>
-<p>This policy informs you of our policies regarding the collection, use, and disclosure of Personal Data when you use our Service and the choices you have associated with that data. This Privacy Policy applies only to our **mobile application** activities and is valid for users of our Service. It is not applicable to any information collected offline.</p>
+
+<div class="legal-note">
+    <strong>Important Notice for Google Play Compliance:</strong>
+    Our Service utilizes the AccessibilityService API and MediaProjection API to perform its core automation features. We are committed to transparency and user privacy.
+</div>
 
 <h2>1. Consent</h2>
 <p>By using our Service, you hereby consent to our Privacy Policy and agree to its terms.</p>
 
 <h2>2. Information We Collect</h2>
-<p>We collect several different types of information for various purposes, primarily through third-party services, to provide and improve our Service to you.</p>
+<p>We collect information primarily through third-party services and localized app functions to provide and improve our Service.</p>
 
 <h3>Types of Data Collected (via Third-Parties):</h3>
 <ul>
-    <li><strong>Device Identifiers and Usage Data:</strong> This includes unique device IDs, IP addresses, advertising identifiers (like Google's AD ID), device type, operating system version, and general usage patterns within the app (e.g., features used, time and date of use).</li>
-    <li><strong>Diagnostic Data (via Firebase Crashlytics):</strong> Information collected when the application crashes or encounters an error, including crash traces, device state, installation UUIDs, and other system activity data.</li>
+    <li><strong>Device Identifiers and Usage Data:</strong> Unique device IDs, IP addresses, advertising identifiers (AdMob), and usage patterns.</li>
+    <li><strong>Diagnostic Data (Firebase Crashlytics):</strong> Crash traces and system activity data to help us fix bugs.</li>
 </ul>
 
-<h3>Information you may provide:</h3>
-<p>If you contact us directly (e.g., via email), we may receive additional information such as your name, email address, the content of your message, and any other information you choose to provide.</p>
+<h2>3. Use of Sensitive Permissions & APIs</h2>
+<p>To provide automated clicking and color detection, our Service requires access to the following sensitive Android APIs:</p>
 
-<h2>3. How We Use Your Information</h2>
-<p>We use the information we collect in various ways, including to:</p>
+<h3>3.1 AccessibilityService API</h3>
+<p>We use the <span class="highlight">AccessibilityService API</span> to perform automated clicks, swipes, and multi-touch gestures. This is essential for the "Auto Clicker" functionality.
 <ul>
-    <li>Provide, operate, and maintain the Service.</li>
-    <li>Improve, personalize, and expand the Service based on usage analysis.</li>
-    <li>Understand and analyze how you use the Service (via analytics).</li>
-    <li>Monitor and resolve technical issues and crashes (via crash reporting).</li>
-    <li>Communicate with you (e.g., for customer support).</li>
-    <li>Detect and prevent fraud.</li>
-    <li>Serve advertisements (via AdMob).</li>
+    <li><strong>No Data Collection:</strong> We DO NOT use the Accessibility API to collect any personal or sensitive information.</li>
+    <li><strong>No Setting Changes:</strong> We DO NOT change user settings or prevent users from disabling/uninstalling any service without permission.</li>
+</ul>
+</p>
+
+<h3>3.2 MediaProjection API (Screen Capture)</h3>
+<p>Our Service uses the <span class="highlight">MediaProjection API</span> to capture screen content for real-time color identification.
+<ul>
+    <li><strong>Temporary Local Storage:</strong> Screenshots taken for "Recording" or "Inspect Color" features are stored locally in the App's internal cache/folder.</li>
+    <li><strong>Ephemeral Processing:</strong> These images are processed locally on your device to detect colors and are never transmitted to any external servers.</li>
+</ul>
+</p>
+
+<h2>4. How We Use Your Information</h2>
+<ul>
+    <li>Provide, operate, and maintain the automation Service.</li>
+    <li>Analyze screen colors to trigger user-defined automated actions.</li>
+    <li>Improve app stability via crash reporting.</li>
+    <li>Serve advertisements via AdMob.</li>
 </ul>
 
-<h2>4. Third-Party Service Providers</h2>
-<p>We use the following third-party services which may collect and process data in accordance with their own policies:</p>
+<h2>5. Data Storage and Deletion</h2>
+<p>Regarding the screen captures and action logs saved by the app:</p>
+<ul>
+    <li><strong>Internal Storage:</strong> All captured images are saved only in the application's private directory (App Folder).</li>
+    <li><strong>User Control:</strong> Users can manually delete any "Inspect Color" records and their associated image files within the app interface.</li>
+    <li><strong>Full Erasure:</strong> Uninstalling the application will automatically delete all locally stored data and images created by the app.</li>
+</ul>
+
+<h2>6. Third-Party Service Providers</h2>
 <ul>
     <li><strong>Google Play Services</strong></li>
-    <li><strong>Google AdMob (Advertising):</strong> AdMob uses data, including Device IDs and Usage Data, to serve both personalized and non-personalized ads. You may opt-out of personalized advertising by visiting your mobile device’s privacy settings (e.g., by resetting your Advertising ID or limiting ad tracking). Learn more at <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Advertising Policies</a>.</li>
-    <li><strong>Google Firebase (Analytics & Crashlytics):</strong> These services help us monitor app stability and usage. Crashlytics automatically collects diagnostic data to help us track and fix bugs. Learn more at <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+    <li><strong>Google AdMob:</strong> For personalized and non-personalized advertising.</li>
+    <li><strong>Google Firebase:</strong> For analytics and crash reporting.</li>
 </ul>
 
-<h2>5. Data Protection Rights (GDPR & CCPA)</h2>
+<h2>7. Donations and Financial Data</h2>
+<p>Donations are processed via external platforms (PayPal, PayMe, FPS). <strong>We do not collect or store your credit card or bank details.</strong></p>
 
-<h3>5.1. GDPR Data Protection Rights (For EU Users)</h3>
-<p class="legal-note">If you are within the European Economic Area (EEA), you have the following rights:</p>
-<ul>
-    <li>**The right to access** – You have the right to request copies of your Personal Data.</li>
-    <li>**The right to rectification** – You have the right to request that we correct any information you believe is inaccurate or incomplete.</li>
-    <li>**The right to erasure** – You have the right to request that we erase your Personal Data, under certain conditions.</li>
-    <li>**The right to restrict processing** – You have the right to request that we restrict the processing of your Personal Data, under certain conditions.</li>
-    <li>**The right to object to processing** – You have the right to object to our processing of your Personal Data, under certain conditions.</li>
-    <li>**The right to data portability** – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
-</ul>
+<h2>8. Data Protection Rights (GDPR & CCPA)</h2>
+<p>Users have the right to access, rectify, or erase their personal data. Since we do not store personal data on our servers, these rights apply primarily to the data stored locally on your device or handled by Google services.</p>
 
-<h3>5.2. CCPA Privacy Rights (For California Residents)</h3>
-<p class="legal-note">Under the CCPA, California consumers have the right to:</p>
-<ul>
-    <li>Request that a business disclose the categories and specific pieces of Personal Data that a business has collected about consumers.</li>
-    <li>Request that a business delete any Personal Data about the consumer that a business has collected.</li>
-    <li>Request that a business that sells a consumer's Personal Data, not sell the consumer's Personal Data.</li>
-</ul>
-<p>If you make a request to exercise any of these rights, we have one month to respond to you. Please contact us using the details below.</p>
+<h2>9. Children's Information</h2>
+<p>We do not knowingly collect personal identifiable information from children under 13.</p>
 
-<h2>6. Children's Information</h2>
-<p>Our Service does not knowingly collect any Personal Identifiable Information from children under the age of 13 ("Children"). If you think that your child provided this kind of information, we strongly encourage you to contact us immediately, and we will do our best efforts to promptly remove such information from our records.</p>
-
-<h2>7. Changes to This Privacy Policy</h2>
-<p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. These terms and conditions are effective as of the date indicated above.</p>
-
-<h2>8. Contact Us</h2>
-<p>If you have any questions or suggestions about our Privacy Policy, please contact us:</p>
-<ul>
-    <li>By email: ccplayconsole@gmail.com</li>
-</ul>
+<h2>10. Contact Us</h2>
+<p>By email: ccplayconsole@gmail.com</p>
 
 </body>
 </html>
